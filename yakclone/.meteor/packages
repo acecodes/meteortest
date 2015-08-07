@@ -5,7 +5,8 @@
 # but you can also edit it by hand.
 
 meteor-platform
+autopublish
 insecure
 twbs:bootstrap
-bootstrap
+natestrauser:font-awesome
 iron:router
