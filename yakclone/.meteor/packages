@@ -10,3 +10,5 @@ insecure
 twbs:bootstrap
 natestrauser:font-awesome
 iron:router
+accounts-ui
+accounts-facebook

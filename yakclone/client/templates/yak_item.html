@@ -1,11 +1,16 @@
 <template name="yakItem">
-  <div class="yak">
-    <li class="list-group-item">
-      <a class="yakPost" href="#">
-        <p class="break-el">{{yak}}</p>
-        <a class="btn pull-right btn-small no" href="#"><i class="fa fa-chevron-down"></i></a>
-        <a class="btn pull-right btn-small yes" href="#"><i class="fa fa-chevron-up"></i></a>
-      </a>
-    </li>
-  </div>
+    <div class="yak">
+        <li class="list-group-item">
+            <a class="yakPost" href="#">
+                <p class="break-el">{{yak}}</p>
+                {{#if currentUser}}
+                <a class="btn" href="#"> {{score}} </a>
+                <a class="btn pull-right btn-small no" href="#"><i class="fa fa-chevron-down"></i></a>
+                <a class="btn pull-right btn-small yes" href="#"><i class="fa fa-chevron-up"></i></a> {{else}}
+                <a class="btn" href="#"> {{score}} </a>
+                <a class="btn pull-right btn-small" href="/login"><i class="fa fa-chevron-down"></i></a>
+                <a class="btn pull-right btn-small" href="/login"><i class="fa fa-chevron-up"></i></a> {{/if}}
+            </a>
+        </li>
+    </div>
 </template>
